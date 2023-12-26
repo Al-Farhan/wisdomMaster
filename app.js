@@ -7,7 +7,8 @@ const Post = require("./models/post");
 const ejsMate = require("ejs-mate");
 
 
-const MONGO_URL = 'mongodb://127.0.0.1:27017/wisdommaster';
+// const MONGO_URL = 'mongodb://127.0.0.1:27017/wisdommaster';
+const MONGO_URL = "mongodb+srv://wisdommaster01:OpghIprl5oapp9xm@wisdommaster.zynvbej.mongodb.net/?retryWrites=true&w=majority";
 
 main()
 .then(()=>{
