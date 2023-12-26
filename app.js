@@ -1,3 +1,9 @@
+if(process.env.NODE_ENV != 'production')
+{
+    require('dotenv').config();
+}
+
+
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -8,7 +14,7 @@ const ejsMate = require("ejs-mate");
 
 
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/wisdommaster';
-const MONGO_URL = "mongodb+srv://wisdommaster01:OpghIprl5oapp9xm@wisdommaster.zynvbej.mongodb.net/?retryWrites=true&w=majority";
+const MONGO_URL = process.env.MONGO_ATLAS_URL;
 
 main()
 .then(()=>{
